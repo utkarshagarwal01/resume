@@ -1,0 +1,298 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{#2} \\
+    %   \textit{#3} & \textit{#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Utkarsh Agarwal}} &  \href{mailto:uagarw3@illinois.edu}
+    { \faEnvelope  ~~uagarw3@illinois.edu} \\
+  \href{https://www.linkedin.com/in/uagarwal01/}
+    {\faLinkedinSquare ~~linkedin.com/in/uagarwal01} \quad  
+  \href{https://github.com/utkarshagarwal01}
+    {\faGithubSquare ~~github.com/utkarshagarwal01} 
+  & \faPhone ~~~~~~~~+1-217-954-3195 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {University of Illinois at Urbana-Champaign}{GPA: 3.90/4}
+            {Master of Computer Science}{May 2024}
+            {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} 
+                % User Interface Design, 
+                User-Centered Machine Learning,
+                Advanced Algorithms, 
+                Distributed Algorithms,
+                % Social and Information Networks, 
+                % Computer Security II,
+                Advanced Software Engineering
+            }}}
+        \resumeSubheading
+            {Manipal Institute of Technology}{GPA: 9.04/10}
+            {Bachelor of Technology in Computer Science and Engineering}{Jul 2019}
+            {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} 
+                Internet Technologies, 
+                Design \& Analysis Of Algorithms, 
+                Distributed \& Cloud Computing, 
+                Social Network Analysis
+                % Machine Learning,
+                % Database Systems
+            }}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Typescript, JavaScript, CSS, HTML, Python, Java, Bash}
+	\resumeSubItem{Frameworks}{~~~~React, Redux, React Native, React Hooks, Django, Flexbox, WCAG, Babel, Webpack, Gulp, GraphQL}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Figma, Jest, ESlint, Git, GitHub, Agile, Scrum, Jira, Postman, Lighthouse, PostgreSQL, Kubernetes}
+	\resumeSubItem{Platforms}{~~~~~~~Android, iOS, Linux, macOS, Windows, AWS, Azure Cloud}
+\resumeSubHeadingListEnd
+%-----------Experience-----------------
+
+\vspace{0pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Tesla, Inc.}{Fremont, California}
+    {Software Engineer Intern}{Aug 2023 -- Dec 2023}
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+          {Developed features on the global Tesla mobile app (iOS \& Android) using \textbf{React Native}, impacting \textbf{5M+ customers}.\newline{} Tech Stack: React Native, TypeScript, Java, Swift }
+          \resumeItemWithoutTitle
+          {Implemented \textbf{Credit Card scanning} by writing text recognition code using \textbf{Apple VisionKit} and \textbf{Android ML Kit}, and then integrating it using a React Native bridge, enabling camera-based payment card addition to the Tesla Wallet.}
+          \resumeItemWithoutTitle
+          {Constructed multiple UI screens to enable \textbf{DKV Mobility} \& \textbf{Travelcard} as payment methods in the EU, connecting $\sim$700K new users to 10K+ Superchargers, resulting in 5K+ new \textbf{charging sessions} in the first week. 
+          \href{https://www.electrive.com/2023/12/07/dkv-mobility-and-fleetcor-integrate-tesla-supercharger}{[Media]} \href{https://www.youtube.com/watch?v=RYYN6T8_jb4}{[Demo]}}
+          \resumeItemWithoutTitle
+          {Added an intermediary, \textbf{backend-driven} React Native modal requesting user DOB. to support additional security needs in several existing \textbf{Tesla Powerwall payout} workflows while using an \textbf{ACH} payment instrument. }
+          \resumeItemWithoutTitle
+          {Identified and \textbf{resolved} an existing bug in the Credit Card form, where re-focusing on the card number field removed masking but prevented cursor placement, resulting in improved \textbf{UX} and increased form \textbf{usability}. }
+          \resumeItemWithoutTitle
+          {Wrote unit tests using \textbf{Jest} for all new React components - critical in bringing out implementation differences in the \textbf{Android and iOS platforms} such as launching Modals - and achieved \textbf{100\% branch coverage}.}
+          \resumeItemWithoutTitle
+          {Undertook \textbf{technical debt} reduction tasks, in \textbf{collaboration} with Product Managers, involving \textbf{code refactoring} in the general Modal component, deduplication of image data and Confluence \textbf{documentations} for the new features added.}
+    \resumeItemListEnd
+    \resumeSubheading{Samsung Research America}{Mountain View, California}
+    {Software Engineer Intern}{May 2023 -- Aug 2023}
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+          {Added \textbf{5+ features} to an issue tracking dashboard, significantly improving developer \textbf{productivity} and data \textbf{accuracy}.\newline{} Tech Stack: React, Django, PostgreSQL, Apache, react-table. }
+          \resumeItemWithoutTitle
+          {Developed Django REST APIs to \textbf{parse} work ticket data from an \textbf{email inbox}, ensuring up-to-date issue tracking without direct \textbf{API access} to the offshore ticketing system.}
+          \resumeItemWithoutTitle
+          {Implemented a global \textbf{search} feature with \textbf{autocomplete}, enabling developers to find tickets across 7+ columns with a latency of \textbf{200ms seconds}, reducing search time by over 95\%.}
+          \resumeItemWithoutTitle
+          {Fixed a boundary error bug in the \textbf{metrics calculation}, aligning dashboard statistics with the expected counts from the emails, improving \textbf{data consistency} and reliability by reducing average discrepancies from \textbf{15 to 0}.}
+          \resumeItemWithoutTitle
+          {Devised \& implemented \textbf{tabbed views}, optimizing \textbf{data representation} to better align with user interaction patterns.}
+    \resumeItemListEnd
+    \resumeSubheading{Citrix Systems}{Bengaluru, India}
+    {Software Engineer 2}{Jan 2019 -- Aug 2022}
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+          {Spearheaded the development of an \textbf{observability platform} to dynamically visualize Kubernetes \textbf{clusters} and intricate \textbf{networking nodes} on an interactive graph using \textbf{Cytoscape.js}. 
+          \href{https://docs.citrix.com/en-us/citrix-application-delivery-management-service/application-analytics-and-management/service-graph/service-graph-begin-details.html}{[Link]} 
+          \newline{} Tech Stack: React, Redux, Cytoscape.js, GraphQL.}
+          \resumeItemWithoutTitle{Wrote \textbf{30+ GraphQL queries} having complex constructs such as nested queries, arguments and mutations.}
+          \resumeItemWithoutTitle
+          {Addressed \& resolved \textbf{data consistency challenges} while rendering time-series data coming from \textbf{Apache Druid}.}
+          \resumeItemWithoutTitle
+          {Boosted \textbf{user adoption} by designing and implementing a seamless multi-step \textbf{onboarding} workflow.}
+          \resumeItemWithoutTitle{Initiated the \textbf{automation testing} of the graph UI and achieved code coverage of \textbf{90\%}.}
+          \resumeItemWithoutTitle
+          {Collaborated with engineers \& product managers to develop \textbf{React higher-order components} for a UI library.}
+          \resumeItemWithoutTitle{Facilitated the team’s transition from Perforce to Git, solving challenges with \textbf{Git LFS and submodules}. }
+          \resumeItemWithoutTitle{Actively contributed in an \textbf{Agile} environment, participating in \textbf{daily stand-ups} and sprint planning. }
+          \resumeItemWithoutTitle{Awarded the Citrix \textbf{Security Ninja} Purple Belt - April, 2021}
+      \resumeItemListEnd
+    \newpage
+    \resumeSubheading
+		{Septentrio N. V.}{Leuven, Belgium}
+		{Software Development Intern}{May 2018 -- Jul 2018}
+		\resumeItemListStart
+        \resumeItemWithoutTitle{\textbf{Full stack development} using Django, MySQL and HTML of a tool to monitor and analyze MB's of log files generated daily by GPS devices under test.\newline{}Tech Stack: Python, Django, Tcl/tk, MySQL, JS, jQuery, HTML, highcharts.}
+        \resumeItemWithoutTitle{Utilized \textbf{crossfilter} to efficiently search the database on multiple dimensions to locate \& filter log files.}
+        \resumeItemWithoutTitle{Generated graphs using \textbf{highcharts} to enable users to compare log files across the selected time period.}
+		\resumeItemListEnd
+	\resumeSubheading
+		{ZippyBots}{Mumbai, India}
+		{Software Development Intern}{May 2017 -- Jul 2017}
+		\resumeItemListStart
+        \resumeItemWithoutTitle{Developed a \textbf{WhatsApp automation software} to send automated replies to contacts using \textbf{python \& selenium}.\newline Tech Stack: Python, selenium, REST, Heroku, Angular.}
+        \resumeItemWithoutTitle{Facilitated work of salespeople of the client by \textbf{integrating short report SMSes} (using Twilio) to a \textbf{web interface}. }
+        \resumeItemWithoutTitle{The salesperson can view/edit all of their report entries together on the interface and send them to their Salesforce account activities/events directly.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeSubheadingTwo{BeatBuddy, Emotion Aware Music Recommendation System}{Jan 2023 -- May 2023}
+        \resumeItemListStart
+            \vspace{-5pt}
+            \resumeItemWithoutTitle{Developed the user interface for BeatBuddy, enabling a \textbf{chat interaction} for emotion-driven \textbf{music recommendations}. \newline Tech Stack: GPT-4, Youtube Player API, Spotify Web API, Chain-of-Thought prompting}
+            \resumeItemWithoutTitle{Integrated and embedded \textbf{YouTube player} functionality into the UI for direct playback of recommended songs, enhancing \textbf{user experience} and accessibility.}
+            \resumeItemWithoutTitle{Implemented the \textbf{interface} between the backend and the \textbf{Spotify API}, achieving a 95\% accuracy in song retrieval.}
+        \resumeItemListEnd
+    \resumeSubheadingTwo{WheresMyTruck?, Android Application}{Sep 2022 -- Dec 2022}
+        \resumeItemListStart
+            \vspace{-5pt}
+            \resumeItemWithoutTitle{Created the \textbf{front end} for an application to find nearby food trucks by \textbf{leveraging crowd-sourced data}. \newline Tech Stack: Android, Java, Google Maps Platform, HTML, CSS, XML, Visual Studio}
+            \resumeItemWithoutTitle{\textbf{Designed low-fidelity prototypes} of app screens before iteratively improving it based on \textbf{user feedback} in the field.}
+        \resumeItemListEnd
+    \resumeSubheadingTwo{Reconstructing Execution Call Flows To Detect Anomalies [Patent applied]}{Sep 2021 -- Jan 2022}
+        \resumeItemListStart
+            \vspace{-5pt}
+            \resumeItemWithoutTitle{Depicted call flow data from \textbf{Kubernetes service logs} onto a graph, visualizing any application's \textbf{call flow}.
+            \href{https://ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20220382617}{[Link]} 
+            \newline Tech Stack: React, REST API, HTML, CSS}
+            \resumeItemWithoutTitle{Illustrated the golden signal \textbf{metrics} of a single call flow on graph nodes and edges utilizing \textbf{Popper.js} tooltips.}
+        \resumeItemListEnd
+    % \resumeSubheadingTwo{Online payment integration using PayTM}{Jan 2018 - Apr 2018}
+    % \resumeItemListStart
+    %     \vspace{-5pt}
+    %     \resumeItemWithoutTitle{Integrated online payments via PayTM to a web dashboard for the college festival Revels '18. \newline Tech Stack: PayTM API for PHP, MySQL}
+    %     \resumeItemWithoutTitle{Introduced error handling such as a delayed response from the bank server or interruptions in the payment process.}
+    % \resumeItemListEnd
+% \vspace{2pt}
+% \resumeSubItem{Treasure hunt website centered around web security}{The game had multiple levels in which the user had to perform the correct actions, ranging from reading source code to changing user agent of the browser to reach the next level.}
+% \vspace{2pt}
+% \resumeSubItem{Generated network simulation log files using Tcl scripts}{Simulated computer networks using `nam' animator. The log files used to simulate the networks were generated by writing Tcl scripts for network simulation. Tech: ns-2, Tcl, AWK}
+% \vspace{2pt}
+% \resumeSubItem{Event registration portal of TechTatva '18}{Participants in the festival were able to form teams and register for events during the festival using
+% the event registration portal.}
+% \vspace{2pt}
+% \resumeSubItem{Developed outstation registration portal of Revels '17}{Students and teams from all over the country can enter their details and register for the festival
+% using the outstation registration portal.}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Positions of responsibility-----------------
+\section{Extracurricular Activities and Leadership}
+    \resumeSubHeadingListStart
+        \resumeSubheadingTwo{L3 Student Consultant, Engineering IT, University Of Illinois}{Jan 2023 - May 2023}
+            \resumeItemListStart
+                \vspace{-5pt}
+                \resumeItemWithoutTitle{ \textbf{Mentored \& supervised} 8-10 undergraduate students as they supported the universities \textbf{labs \& classrooms}.\newline Skills: system engineering, collaboration, teamwork, customer service.}
+                \resumeItemWithoutTitle{Worked with full-time IT staff, from flashing operating systems in labs to maintaining hardware inventory.}
+                \resumeItemWithoutTitle{Assisted \textbf{users} on email and phone with \textbf{requests} regarding campus IT services.}
+            \resumeItemListEnd
+    \resumeSubheading{Treasurer, ACM Manipal Chapter}{Manipal, India}
+    {Organized various workshops under the chapter such as data science and cryptography}{Apr 2016 - May 2017}
+    \resumeSubheading{Joint Secretary, Manipal Information Security Team}{Manipal, India}
+    {Organized workshops/events under the club such as cryptography, penetration testing.}{Aug 2017 - Mar 2018}
+    \vspace{2pt}
+    \resumeSubHeadingListEnd
+% \vspace{-5pt}
+%-----------Co-curricular Achievements-----------------
+\section{Co-curricular Achievements}
+\begin{description}[font=$\bullet$]
+\item {Scored \textbf{2400/2400} in SAT subject tests in the subjects (Physics, Math Level 1, Math Level 2). }
+% Also scored \textbf{800/800} in Mathematics, SAT.
+\vspace{-5pt}
+\item {Cleared JEE Advanced '15 with rank \textbf{4822} out of about 120,000 students.}
+
+\end{description}
+%-----------Awards-----------------
+% \section{Honors and Awards}
+% \begin{description}[font=$\bullet$]
+% \item {Citrix Security Ninja Purple Belt - April, 2021}
+% \vspace{-5pt}
+% \item {Citrix Tech Fair - Service Graph - Best Potential Value to Citrix Award - May, 2020}
+% \vspace{-5pt}
+% \item {Microsoft Technology Associate for Cloud Fundamentals - July, 2016}
+% 
+% \end{description}
+% %-----------Volunteer Experience-----------------
+% \vspace{-5pt}
+% \section{Volunteer Experience}
+%   \resumeSubHeadingListStart
+% 	\resumeSubheading
+%     {Habitat for Humanity International}{Bangalore, India}
+%     {Contributed time, labor \& resources to develop houses for underprivileged people in the community}{Apr 2020}
+% \vspace{5pt}
+%     % \vspace{10pt}\textbf{\large{Community Experience}}
+%     \resumeSubheading
+%     {Rotaract Club, Rotary International}{Manipal, India}
+%     {Conducted bi-annual blood donation camps, care giving weekends, and 5+ fund raising events.}{Aug 2015 - Jul 2017}
+
+% \resumeSubHeadingListEnd
+
+\end{document}

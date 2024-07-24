@@ -1,0 +1,32 @@
+# Ignore auxiliary and intermediate files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.lof
+*.lot
+
+# Ignore generated PDF files
+*.pdf
+
+# Ignore editor backups and temporary files
+*~
+*.backup
+*.bak
+*.swp
+*.tmp
+
+# Ignore directories
+*.dSYM/
+*.DS_Store
+
+# Ignore build directory if used
+build/
+
+# Ignore VSCode settings
+.vscode/
