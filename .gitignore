@@ -27,6 +27,3 @@
 
 # Ignore build directory if used
 build/
-
-# Ignore VSCode settings
-.vscode/
