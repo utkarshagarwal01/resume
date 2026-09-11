@@ -81,12 +81,13 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\LARGE Utkarsh Agarwal}} &  \href{mailto:uagarw3@illinois.edu}
-    { \faEnvelope  ~~uagarw3@illinois.edu} \\
+  \textbf{{\LARGE Utkarsh Agarwal}} &  \href{mailto:agarwalutkarsh03@gmail.com}
+    { \faEnvelope  ~~agarwalutkarsh03@gmail.com} \\
   \href{https://www.linkedin.com/in/uagarwal01/}
     {\faLinkedinSquare ~~linkedin.com/in/uagarwal01} \quad  
-  \href{https://github.com/utkarshagarwal01}
-    {\faGithubSquare ~~github.com/utkarshagarwal01} 
+  % GitHub link commented out 2026-09-11 (no public activity since Aug 2024):
+  % \href{https://github.com/utkarshagarwal01}
+  %   {\faGithubSquare ~~github.com/utkarshagarwal01} 
   & \faPhone ~~~~~~~~+1-217-954-3195 \\
 \end{tabular*}
 
@@ -121,16 +122,39 @@
 \vspace{-5pt}
 \section{Skills Summary}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~Typescript, JavaScript, CSS, HTML, Python, Java, Bash}
-	\resumeSubItem{Frameworks}{~~~~React, Redux, React Native, React Hooks, Django, i18n, l10n, WCAG, Babel, Webpack, Gulp, GraphQL}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Figma, Jest, ESlint, Git, GitHub, Agile, Scrum, Jenkins, Jira, Postman, PostgreSQL, Kubernetes}
-	\resumeSubItem{Platforms}{~~~~~~~Android, iOS, Mobile software development,  Linux, macOS, Windows, AWS, Azure Cloud}
+	\resumeSubItem{Languages}{~~~~~~Python, TypeScript, JavaScript, SQL, HTML/CSS, Java, Bash}
+	\resumeSubItem{Backend}{~~~~~~~~~~Flask, REST APIs, OAuth 2.0 / SSO, PostgreSQL, Redis, Solr, Airflow, Django, partner/ATS integrations}
+	\resumeSubItem{Frontend}{~~~~~~~~React, Redux, react-router, React Native, Webpack, GraphQL, i18n/l10n, WCAG accessibility}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~AWS, Azure, Kubernetes, Jenkins, Git, pytest, Jest, Playwright, Jira, Figma}
 \resumeSubHeadingListEnd
 %-----------Experience-----------------
 
 \vspace{0pt}
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading{Eightfold AI}{Santa Clara, California}
+    {Software Engineer}{Sep 2024 -- Present}
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+          {Build the services, APIs \& partner integrations behind \textbf{Personalized Career Sites (PCS)}, Eightfold's AI-powered job discovery \& application platform handling \textbf{5.5M+ job applications/month} across \textbf{150+ enterprise career sites}, including Microsoft, Starbucks and Lockheed Martin, on AWS \& Azure.
+          \newline{} Tech Stack: Python, Flask, PostgreSQL, Apache Solr, Redis, AWS, TypeScript, React, pytest, Playwright}
+          \resumeItemWithoutTitle
+          {Hardened \textbf{SSO/OAuth} candidate authentication serving \textbf{2.5M+ sign-ins/month} — found \& patched a \textbf{P0 account-takeover OAuth vulnerability} pre-launch, resolved a stored-\textbf{XSS} escalation, and migrated legacy SSO to the OAuth 2.0 \textbf{authorization-code flow}.}
+          \resumeItemWithoutTitle
+          {Led \textbf{Apply with LinkedIn} from design to \textbf{GA} — LinkedIn OAuth \& Apply Connect integration, in-page resume preview via short-lived signed URLs, Admin Console onboarding and funnel analytics — earning \textbf{LinkedIn's partner certification}; \textbf{20K+ candidates} imported their profile in the first 2 months and \textbf{92\%} of them completed an application, vs.\ a \textbf{68\%} baseline.}
+          \resumeItemWithoutTitle
+          {Owned the \textbf{XML job-feed} platform syndicating jobs to LinkedIn \& Indeed — re-architected the daily generation pipeline to \textbf{stream} feeds to S3, decoupling memory from feed size: peak memory down \textbf{78\%}, from 23\,GB to 4.9\,GB, and daily runs \textbf{3$\times$ faster}, from 4.4\,h to 87\,min; drove the LinkedIn \textbf{schema v2 migration}.}
+          \resumeItemWithoutTitle
+          {Grew a summer intern into an independent contributor on the XML feed platform in 9 weeks — set outcomes, weekly milestones and the PR-review bar; \textbf{4 PRs merged to production} with \textbf{zero regressions}, including presigned-S3 feed delivery, the LinkedIn v2 company-ID backfill and a \textbf{400+ line} legacy-gate cleanup.}
+          \resumeItemWithoutTitle
+          {Drove the \textbf{PCS go-live and hypercare program} for the \textbf{Microsoft global career site}, careers.microsoft.com with 4,000+ jobs — recurring P0/P1 triage and overnight launch monitoring, surfacing and fixing multiple product, \textbf{security \& compliance} bugs pre-launch.}
+          \resumeItemWithoutTitle
+          {Owned \textbf{production health} of the candidate application workflow — restored a silently degraded \textbf{700K/day} job-notification pipeline, hotfixed an infinite-render loop protecting \textbf{6K+ apply sessions/day}, resolved escalations for Starbucks, John Deere \& Coca-Cola FEMSA, and deprecated \textbf{10+ feature gates} post-GA.}
+          \resumeItemWithoutTitle
+          {Shipped \textbf{multi-location position questions} end-to-end — backend config validation, dynamic React form sections, ATS write-back and a \textbf{gated rollout to GA} — enabling location-specific application questions for jobs posted across multiple locations.}
+          \resumeItemWithoutTitle
+          {Drove \textbf{WCAG accessibility} compliance across the apply flow, candidate auth and the \textbf{Octuple} open-source design system — screen reader support, focus management and ARIA fixes.}
+    \resumeItemListEnd
     \resumeSubheading{Tesla, Inc.}{Fremont, California}
     {Software Engineer Intern}{Aug 2023 -- Dec 2023}
     \resumeItemListStart
@@ -149,8 +173,9 @@
           {Proactively identified and \textbf{resolved} an existing bug in the Credit Card form, where re-focusing on the card number field removed masking but prevented cursor placement, resulting in improved \textbf{UX} and increased form \textbf{usability}. }
           \resumeItemWithoutTitle
           {Wrote unit tests using \textbf{Jest} for all new React components - critical in bringing out implementation differences in the \textbf{Android and iOS platforms} such as launching Modals - and achieved \textbf{100\% branch coverage}.}
-          \resumeItemWithoutTitle
-          {Undertook \textbf{technical debt} reduction tasks, in \textbf{collaboration} with Product Managers, involving \textbf{code refactoring} in the general Modal component, deduplication of image data and Confluence \textbf{documentations} for the new features added.}
+          % Trimmed 2026-08-24 to keep resume at 2 pages (weakest Tesla bullet):
+          % \resumeItemWithoutTitle
+          % {Undertook \textbf{technical debt} reduction tasks, in \textbf{collaboration} with Product Managers, involving \textbf{code refactoring} in the general Modal component, deduplication of image data and Confluence \textbf{documentations} for the new features added.}
     \resumeItemListEnd
     \resumeSubheading{Samsung Research America}{Mountain View, California}
     {Software Engineer Intern}{May 2023 -- Aug 2023}
@@ -160,13 +185,12 @@
           \resumeItemWithoutTitle
           {Programmed REST APIs in \textbf{Django} to \textbf{parse} work ticket data from an \textbf{email inbox}, ensuring up-to-date issue tracking without direct \textbf{API access} to the offshore ticketing system.}
           \resumeItemWithoutTitle
-          {Introduced a global \textbf{search} feature with \textbf{autocomplete}, enabling developers to find tickets across 7+ columns with a latency of \textbf{200ms seconds}, reducing search time by over 95\%.}
+          {Introduced a global \textbf{search} feature with \textbf{autocomplete}, enabling developers to find tickets across 7+ columns with a latency of \textbf{200ms}, reducing search time by over 95\%.}
           \resumeItemWithoutTitle
           {Fixed a boundary error bug in the \textbf{metrics calculation}, aligning dashboard statistics with the expected counts from the emails, improving \textbf{data consistency} and reliability by reducing average discrepancies from \textbf{15 to 0}.}
           \resumeItemWithoutTitle
           {Architected \textbf{tabbed views}, optimizing \textbf{data representation} to better align with user interaction patterns.}
     \resumeItemListEnd
-    \vspace{10pt}
     \resumeSubheading{Citrix Systems}{Bengaluru, India}
     {Software Engineer 2}{Jan 2019 -- Aug 2022}
     \resumeItemListStart
@@ -182,10 +206,10 @@
           \resumeItemWithoutTitle
           {Collaborated with engineers \& product managers to develop \textbf{React higher-order components} for a UI library.}
           \resumeItemWithoutTitle{Facilitated the team’s transition from Perforce to Git, solving challenges with \textbf{Git LFS and submodules}. }
-          \resumeItemWithoutTitle{Actively contributed in an \textbf{Agile} environment, participating in \textbf{daily stand-ups} and sprint planning. }
+          % Trimmed 2026-08-24 (filler — every SWE job is agile):
+          % \resumeItemWithoutTitle{Actively contributed in an \textbf{Agile} environment, participating in \textbf{daily stand-ups} and sprint planning. }
           \resumeItemWithoutTitle{Awarded the Citrix \textbf{Security Ninja} Purple Belt - April, 2021}
       \resumeItemListEnd
-    \newpage
     \resumeSubheading
 		{Septentrio N. V.}{Leuven, Belgium}
 		{Software Development Intern}{May 2018 -- Jul 2018}
@@ -194,15 +218,15 @@
         \resumeItemWithoutTitle{Utilized \textbf{crossfilter} to efficiently search the database on multiple dimensions to locate \& filter log files.}
         \resumeItemWithoutTitle{Generated graphs using \textbf{highcharts} to enable users to compare log files across the selected time period.}
 		\resumeItemListEnd
-	\resumeSubheading
-		{ZippyBots}{Mumbai, India}
-		{Software Development Intern}{May 2017 -- Jul 2017}
-		\resumeItemListStart
-        \resumeItemWithoutTitle{Created a \textbf{WhatsApp automation software} to send automated replies to contacts using \textbf{python \& selenium}.\newline Tech Stack: Python, REST \& SOAP, selenium, Heroku, Angular.}
-        \resumeItemWithoutTitle{Facilitated work of salespeople of the client by \textbf{integrating short report SMSes} (using Twilio) to a \textbf{web interface}. }
-        \resumeItemWithoutTitle{Allowed the salesperson to \textbf{view/edit} all of their \textbf{report} entries together on the interface and send them directly to their Salesforce account activities/events, reducing the reporting time from \textbf{10 min to $<$ 10 seconds}.}
-        \resumeItemWithoutTitle{Leveraged \textbf{SOAP APIs} to communicate \& insert the data in their Salesforce accounts, with a latency of \textbf{150ms}.}
-        \resumeItemListEnd
+	% \resumeSubheading
+	% 	{ZippyBots}{Mumbai, India}
+	% 	{Software Development Intern}{May 2017 -- Jul 2017}
+	% 	\resumeItemListStart
+    %     \resumeItemWithoutTitle{Created a \textbf{WhatsApp automation software} to send automated replies to contacts using \textbf{python \& selenium}.\newline Tech Stack: Python, REST \& SOAP, selenium, Heroku, Angular.}
+    %     \resumeItemWithoutTitle{Facilitated work of salespeople of the client by \textbf{integrating short report SMSes} (using Twilio) to a \textbf{web interface}. }
+    %     \resumeItemWithoutTitle{Allowed the salesperson to \textbf{view/edit} all of their \textbf{report} entries together on the interface and send them directly to their Salesforce account activities/events, reducing the reporting time from \textbf{10 min to $<$ 10 seconds}.}
+    %     \resumeItemWithoutTitle{Leveraged \textbf{SOAP APIs} to communicate \& insert the data in their Salesforce accounts, with a latency of \textbf{150ms}.}
+    %     \resumeItemListEnd
 \resumeSubHeadingListEnd
 %-----------PROJECTS-----------------
 \vspace{-5pt}
@@ -212,7 +236,8 @@
         \resumeItemListStart
             \vspace{-5pt}
             \resumeItemWithoutTitle{Evaluated software testing and debugging tools using the \textbf{Defects4J} bugs dataset, comprising \textbf{835} real-world bugs from \textbf{17} open-source Java projects (eg. Mockito), creating over \textbf{5,000 automated tests}.\newline{}Tech Stack: Java, Randoop, EvoSuite, Selenium.}
-            \resumeItemWithoutTitle{Employed automated generation tools like \textbf{Randoop} and \textbf{EvoSuite}, comparing them across buggy and patched code.}
+            % Trimmed 2026-08-24 (redundant — tools already named in the first bullet):
+            % \resumeItemWithoutTitle{Employed automated generation tools like \textbf{Randoop} and \textbf{EvoSuite}, comparing them across buggy and patched code.}
             \resumeItemWithoutTitle{Used metrics such as \textbf{Levenshtein Distance} and \textbf{CodeBLEU} for localization, improving detection accuracy by \textbf{25\%}.}
             \resumeItemWithoutTitle{Utilized Selenium to automate \textbf{OpenClover} coverage analysis in the Defects4J dataset, achieving \textbf{70\%} accuracy in identifying buggy lines.}
         \resumeItemListEnd
@@ -223,12 +248,12 @@
             \resumeItemWithoutTitle{Established the \textbf{interface} with the OpenAI \textbf{GPT-4} API, achieving a \textbf{95\%} recall rate using Retrieval-Augmented Generation (RAG) to dynamically adapt music suggestions to users' emotional states.}
             \resumeItemWithoutTitle{Integrated and embedded \textbf{YouTube player} functionality into the UI for direct playback of recommended songs, enhancing \textbf{user experience} and accessibility.}
             \resumeItemListEnd
-    \resumeSubheadingTwo{WheresMyTruck?, Android Application}{Sep 2022 -- Dec 2022}
-        \resumeItemListStart
-            \vspace{-5pt}
-            \resumeItemWithoutTitle{Created the \textbf{front end} for a mobile application to find nearby food trucks by \textbf{leveraging crowd-sourced data}. \newline Tech Stack: Android, Java, Google Maps Platform, HTML, CSS, XML, Visual Studio}
-            \resumeItemWithoutTitle{\textbf{Designed low-fidelity prototypes} of app screens before iteratively improving it based on \textbf{user feedback} in the field.}
-        \resumeItemListEnd
+    % \resumeSubheadingTwo{WheresMyTruck?, Android Application}{Sep 2022 -- Dec 2022}
+    %     \resumeItemListStart
+    %         \vspace{-5pt}
+    %         \resumeItemWithoutTitle{Created the \textbf{front end} for a mobile application to find nearby food trucks by \textbf{leveraging crowd-sourced data}. \newline Tech Stack: Android, Java, Google Maps Platform, HTML, CSS, XML, Visual Studio}
+    %         \resumeItemWithoutTitle{\textbf{Designed low-fidelity prototypes} of app screens before iteratively improving it based on \textbf{user feedback} in the field.}
+    %     \resumeItemListEnd
     \resumeSubheadingTwo{Reconstructing Execution Call Flows To Detect Anomalies [Patent applied]}{Sep 2021 -- Jan 2022}
         \resumeItemListStart
             \vspace{-5pt}
